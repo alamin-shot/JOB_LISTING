@@ -5,6 +5,9 @@ import { IconButton } from "@mui/material";
 import CloseIcon from "@mui/icons-material/Close";
 
 export default function MoreJobDetailsModal({ job, onclose }) {
+	if (!job) {
+		return null;
+	}
 	return (
 		<>
 			<div className="more_modal">
