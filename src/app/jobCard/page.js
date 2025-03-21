@@ -1,7 +1,7 @@
 export default function JobCard({ jobs, open }) {
 	return (
 		<>
-			{jobs.length > 0 ? (
+			{jobs && jobs.length > 0 ? (
 				jobs.map((job) => (
 					<div key={job.id} className="card_section">
 						<div className="section_1">
